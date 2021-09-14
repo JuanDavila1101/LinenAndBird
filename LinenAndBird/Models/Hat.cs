@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace LinenAndBird.Models
 {
-  public class HatModel
+  public class Hat
   {
+    public Guid Id { get; set; }
     public string Designer { get; set; }
     public string Color { get; set; }
     public HatStyle Style { get; set; }
-
-
-
   }
-
   public enum HatStyle
   {
     Normal,
-    OpenBack,
-    WhiteBrim
-
-
+    WideBrim,
+    OpenBack
   }
 
 }
